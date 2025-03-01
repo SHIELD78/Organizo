@@ -1,0 +1,244 @@
+body {
+    background-color: rgba(0, 0, 0, 0.943);
+    margin: 0px;
+    display: flex;
+    /* Making the body Flex container */
+    flex-direction: column;
+    /* To arrange the child element in vertical we used column  */
+    min-height: 100vh;
+    /*to give body fullviweport 100%  */
+}
+
+
+
+
+#header {
+    background-color: rgba(33, 33, 39, .6);
+    height: 50px;
+    width: 1076px;
+    border-radius: 40px;
+    margin: 15px auto 0px;
+    display: flex;
+    justify-content: space-between; /* Aligns items to left and right */
+    align-items: center;
+  
+}
+
+
+#home_section {
+    margin-left: 10px;
+}
+
+#home {
+    padding: 10px 20px;
+    font: size 16px;
+    border: none;
+    border-radius: 999px;
+    background-color: #2d48dee6;
+    color: white;
+
+  
+}
+
+#button {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#login {
+    padding: 10px 20px;
+    font: size 16px;
+    border: none;
+    border-radius: 999px;
+    background-color: #751ec7;
+    color: white;
+
+}
+
+#get_started {
+
+    padding: 10px 15px;
+    font: size 16px;
+    border: none;
+    border-radius: 999px;
+    background-color: green;
+    color: white;
+
+}
+
+
+
+
+#content {
+    flex: 1;
+
+}
+
+
+
+#footer {
+    background-color: black;
+    height: 50px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#terms {
+    display: flex;
+    gap: 50px
+}
+
+.p1 {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* VTime Logo Part from here */
+
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 44px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 15px rgba(0, 183, 255, 0.8);
+    display: flex;
+    align-items: center;
+}
+
+.clock {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0072ff, #003973);
+    border: 2px solid #fff;
+    position: relative;
+}
+
+.clock::before, .clock::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+clock::before {
+    width: 2px;
+    height: 12px;
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.clock::after {
+    width: 2px;
+    height: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+
+/* Welcome to VITime part form here */
+.welcome{
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome h1 {
+    font-size: 3rem;
+}
+.welcome p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.welcome button {
+    padding: 10px 20px;
+    background: rgb(39, 14, 203);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+
+/* Newsletter box from here */
+
+
+#newsletter {
+    background: rgba(33, 33, 39, 0.9);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#newsletter h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.newsletter-input {
+    padding: 12px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-btn {
+    padding: 12px 20px;
+    background-color: #751ec7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* Social icon part from here */
+#social-icons {
+    position: absolute;
+    top: 15px; /* Aligns with the header */
+    right: 20px; /* Moves it to the right corner */
+    display: flex;
+    gap: 15px;
+}
+
+#social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+#social-icons a:hover {
+    color: #a970ff;
+}
+
+
+
