@@ -83,5 +83,23 @@ p a {
     margin-top: 10px;
 }
 
+#back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgb(27, 27, 33);
+    color: rgba(255, 255, 255, 0.898);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#back-button:hover {
+    background-color: rgb(27, 27, 33);
+}
+
 
 
