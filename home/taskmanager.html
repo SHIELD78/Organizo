@@ -112,6 +112,73 @@
         </section>
 
 
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <p>Seamlessly use your preferred tools for unified work, start to finish.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is Taskify?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Taskify is a task management platform designed to help teams collaborate and stay productive.
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I get started with Taskify?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can sign up for a free account and start creating tasks immediately.
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is Taskify available on multiple platforms?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, Taskify is available on web, iOS, and Android platforms.
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What features does Taskify offer for task management?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Taskify offers task lists, deadlines, priorities, reminders, and collaboration features.
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I use Taskify for team collaboration?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! You can share tasks, assign them to team members, and track progress together.
+                    </div>
+                </div>
+        
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is Taskify available in multiple languages?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, Taskify supports multiple languages to help users worldwide.
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 
@@ -143,10 +210,14 @@
             window.location.href = "../login/login.html";
         });
 
-        document.getElementById("get_started2").addEventListener("click", function () {
-            window.location.href = "../login/login.html";
+       
+        document.querySelectorAll(".faq-item").forEach(item => {
+        item.addEventListener("click", () => {
+            item.classList.toggle("active");
         });
+    });
 
+        
 
 
 
