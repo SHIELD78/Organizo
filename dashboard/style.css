@@ -35,7 +35,7 @@ body {
 .logo-placeholder {
   width: 40px;
   height: 40px;
-  background-color: #ff8800;
+  background-color: #a855f7;
   color: #fff;
   display: flex;
   align-items: center;
@@ -82,7 +82,7 @@ body {
 .nav-item.active {
   opacity: 1;
   background-color: #2d2d2d;
-  color: #ff8800;
+  color: #a855f7;
 }
 
 .nav-item i {
@@ -136,7 +136,7 @@ body {
 .user-avatar {
   width: 40px;
   height: 40px;
-  background-color: #ff8800;
+  background-color: #a855f7;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -234,7 +234,7 @@ body {
 
 .view-btn i {
   font-size: 16px;
-  color: #ff8800;
+  color: #a855f7;
 }
 
 /* Boards Section */
@@ -253,7 +253,7 @@ body {
 
 .boards-header i {
   font-size: 18px;
-  color: #ff8800;
+  color: #a855f7;
 }
 
 .boards-container {
@@ -261,6 +261,7 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
 }
+
 
 .board-card {
   background-color: #252525;
@@ -341,7 +342,7 @@ body {
 
 .create-icon {
   font-size: 32px;
-  color: #ff8800;
+  color: #a855f7;
   margin-bottom: 10px;
 }
 

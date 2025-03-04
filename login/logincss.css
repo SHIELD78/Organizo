@@ -160,7 +160,7 @@
     color: #a855f7;
   }
   
-  .login-btn {
+  #login-btn {
     width: 100%;
     padding: 14px;
     background: linear-gradient(135deg, #a855f7 0%, #8a3fd1 100%);
@@ -176,7 +176,7 @@
     overflow: hidden;
   }
   
-  .login-btn::before {
+  #login-btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -187,17 +187,17 @@
     transition: left 0.7s ease;
   }
   
-  .login-btn:hover {
+  #login-btn:hover {
     background: linear-gradient(135deg, #b366f7 0%, #9a4fe1 100%);
     box-shadow: 0 6px 15px rgba(168, 85, 247, 0.4);
     transform: translateY(-2px);
   }
   
-  .login-btn:hover::before {
+  #login-btn:hover::before {
     left: 100%;
   }
   
-  .login-btn:active {
+  #login-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 8px rgba(168, 85, 247, 0.3);
   }
