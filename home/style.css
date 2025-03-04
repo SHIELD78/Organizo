@@ -2,12 +2,9 @@ body {
     background-color: #0a0a0a;
     margin: 0px;
     padding: 0;
-    display: flex;
-    /* Making the body Flex container */
-    flex-direction: column;
-    /* To arrange the child element in vertical we used column  */
-    min-height: 100vh;
-    /*to give body fullviweport 100%  */
+    display: flex; /* Making the body Flex container */
+    flex-direction: column; /* To arrange the child element in vertical we used column  */
+    min-height: 100vh;  /*to give body fullviweport 100%  */
 }
 
 
@@ -16,7 +13,6 @@ body {
 #header {
     position: absolute;
     top: 10px;
-    /* Adjust as needed */
     left: 50%;
     transform: translateX(-50%);
     background-color: #171515;
@@ -31,7 +27,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    /* Keeps it above other elements */
+   
 }
 
 #header_main {
@@ -44,14 +40,13 @@ body {
         0px -4px 6px rgba(255, 255, 255, 0.05),
         0px -8px 12px rgba(3, 6, 13, 0.9);
     height: 70px;
-    /* Increased height for better visibility */
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    /* Ensures it's above other elements */
+    
     padding: 0 20px;
-    /* Add padding for spacing */
+
 }
 
 
@@ -64,8 +59,7 @@ body {
     gap: 15px;
 }
 
-#login,
-#get_started {
+#login,#get_started {
     padding: 8px 18px;
     font-size: 14px;
     font-weight: 600;
@@ -122,34 +116,7 @@ body {
 
 
 
-#footer {
-    background-color: black;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-#footer::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: 0;
-    width: 100%;
-    height: 0.2px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#terms {
-    display: flex;
-    gap: 50px
-}
-
-.p1 {
-    text-decoration: none;
-    color: white;
-}
 
 
 
@@ -162,7 +129,7 @@ body {
     justify-content: flex-start;
     height: 100%;
     padding-left: 20px;
-    /* Adjust spacing from the left */
+   
 }
 
 #logo {
@@ -181,7 +148,7 @@ body {
     height: 48px;
     width: 48px;
     margin-right: 10px;
-    /* Adds spacing between the logo and text */
+    
 }
 
 #text {
@@ -198,12 +165,14 @@ body {
 /* Social icon part from here */
 #social-icons {
     position: absolute;
-    top: 24px;
-    margin-top:0px;
- 
+    top: 15px;
     right: 30px;
     display: flex;
     gap: 15px;
+    z-index: 1100;
+    padding: 10px; 
+
+   
 }
 
 #social-icons a {
@@ -217,6 +186,8 @@ body {
     color: #a970ff;
 }
 
+
+/* Nav Bar from here */
 
 #nav-links {
     margin-left: 20px;
@@ -259,6 +230,10 @@ body {
     opacity: 1;
 }
 
+
+
+
+/* Feature Card from here */
 #features {
     padding: 50px 20px;
     max-width: 900px;
@@ -288,7 +263,6 @@ body {
     justify-content: center;
 }
 
-/* Feature Card (Glassmorphic + Neon Borders) */
 .feature-card {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
@@ -297,7 +271,7 @@ body {
     border-radius: 15px;
     width: 100%;
     max-width: 320px;
-    /* Limit width */
+
     text-align: center;
     box-shadow: 0px 0px 12px rgba(169, 112, 255, 0.3);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -325,7 +299,6 @@ body {
     color: white;
 }
 
-/* Card Text */
 .feature-card h3 {
     font-size: 1.4rem;
     margin-bottom: 8px;
@@ -343,7 +316,7 @@ body {
 
 
 
-/* Hero Section */
+/* Main body text Part */
 .hero {
     height: 60vh;
     display: flex;
@@ -373,12 +346,11 @@ body {
             rgba(3, 6, 13, 0) 100%);
     overflow: visible;
     z-index: -1;
-    /* Keeps it in the background */
     opacity: 0.8;
-    /* Adjust if needed */
     filter: blur(40px);
-    /* Smooth effect */
+  
 }
+
 
 
 .hero-overlay {
@@ -403,11 +375,8 @@ body {
 
 .hero-content h1 {
     font-size: 3rem;
-    
-    /* Increase font size */
     font-weight: 700;
     text-transform: none;
-    /* Remove uppercase */
     letter-spacing: 1px;
     color: #ffffff;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
@@ -468,82 +437,210 @@ body {
 
 
 
-/* FAQ Section */
+
+/* FAQ Section from here */
 #faq {
-    max-width: 800px;
-    margin: 60px auto;
+    padding: 20px;
+    max-width: 700px;
+    margin: 40px auto;
     text-align: center;
-    color: #fff;
-}
+    font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont", sans-serif;
+    padding: 0 15px;
+  }
+  
+  
+  #faq h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 15px;
+    letter-spacing: -0.3px;
+  }
+  
 
-#faq h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    color: #d1d1d1;
-    margin-bottom: 10px;
-}
-
-#faq p {
+  #faq p {
     font-size: 1rem;
-    color: #aaa;
-    margin-bottom: 30px;
-}
-
-/* FAQ Container */
-.faq-container {
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 40px;
+    line-height: 1.4;
+    font-weight: 400;
+  }
+  
+  
+  .faq-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-}
-
-/* FAQ Item */
-.faq-item {
-    background: #111;
+    gap: 15px;
+  }
+  
+  
+  .faq-item {
+    background: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 18px 20px;
+    padding: 18px 0;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-}
-
-/* Question */
-.faq-question {
+    border-radius: 0;
+    text-align: left;
+  }
+  
+  
+  .faq-question {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #eee;
-}
-
-/* Icon */
-.faq-question i {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont", sans-serif;
+  }
+  
+ 
+  .faq-question i {
     transition: transform 0.3s ease-in-out;
-    color: #bbb;
-}
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.3rem;
+  }
+  
 
-/* Answer */
-.faq-answer {
+  .faq-answer {
     font-size: 1rem;
-    color: #888;
+    color: rgba(255, 255, 255, 0.6);
     max-height: 0;
     overflow: hidden;
-    padding-top: 8px;
+    padding-top: 12px;
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
-}
-
-/* Active State */
-.faq-item.active .faq-answer {
-    max-height: 120px;
+    font-family: "SF Pro Display", "-apple-system", "BlinkMacSystemFont", sans-serif;
+    line-height: 1.4;
+  }
+  
+  
+  .faq-item.active .faq-answer {
+    max-height: 150px;
     opacity: 1;
-}
-
-.faq-item.active .faq-question i {
+  }
+  
+  .faq-item.active .faq-question i {
     transform: rotate(45deg);
+  }
+  
+
+
+/* Footer part is from here  */
+#footer {
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #58a6ff; 
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #c9d1d9;
+    line-height: 1.6;
+    max-width: 250px;
 }
 
 
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #58a6ff;
+}
 
 
+.newsletter-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color: #161b22;
+    color: #e6edf3;
+}
+
+.newsletter-form button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #58a6ff;
+    color: #0d1117;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #79c0ff;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #58a6ff;
+}
 
 
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #222;
+    font-size: 14px;
+    color: #8b949e;
+    margin-top: 20px;
+}
+  
+
+  
