@@ -5,6 +5,7 @@ body {
     display: flex; /* Making the body Flex container */
     flex-direction: column; /* To arrange the child element in vertical we used column  */
     min-height: 100vh;  /*to give body fullviweport 100%  */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -371,6 +372,8 @@ body {
     max-width: 700px;
     color: white;
     margin: 0 auto;
+   s
+    
 }
 
 
@@ -393,6 +396,7 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
     opacity: 0.8;
+
 }
 
 .cta-buttons {
@@ -641,6 +645,16 @@ body {
     font-size: 14px;
     color: #8b949e;
     margin-top: 20px;
+}
+#i1{
+  
+    display: flex;
+    justify-self: center;
+    height:600px;
+   
+    box-shadow: 0px 8px 25px rgba(106, 90, 205, 0.9);
+    
+
 }
   
 

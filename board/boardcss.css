@@ -113,14 +113,20 @@ body {
 
 /* Project Header */
 .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 30px;
-    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 28px;
+    border-bottom: 1px solid #333;
+    background-color: #1e1e1e;
 }
 
 .project-title {
+    padding-top: 4px;
+    color: #ccc;
     font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 8px;
+    font-weight: 500;
 }
 
 
